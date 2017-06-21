@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css"> <!--  -->
+<title>Строительная компания</title>
+</head>
+<body>
+<table class = "site"> <!-- весь сайт будет в виде таблицы -->
+<tr> 
+<td colspan = 2 class = "menu"> <!-- в первой строке вложенна¤ таблица "меню" -->
+	<table class="menu"> <!-- главное меню в виде таблицы -->
+	<!-- теги таблицы: <tr>-строка <td>-¤чейка <th>-¤чейка-заголовок -->
+	<!-- в заголовке таблицы <th> ссылка на главную страницу. Ёта строка занимает 6 столбцов (colspan = 6), т.к. во второй строке - 6 ссылок -->
+	  <tr><th colspan = "6"><a href="index.html">Брокс-континенталь</a></th></tr> 
+	  <tr> <!-- втора¤ строка -->
+	  <!-- ссылки: -->
+		<td><a href="products.html">Товары</a></td> 
+		<td><a href="services.html">Виды услуг</a></td>
+		<td><a href="photo.html">Фото</a></td>
+		<td><a href="specialists.html">Специалисты</a></td>
+		<td><a href="bonuses.html">Акции</a></td>
+		<td><a href="contakts.html">Контакты</a></td>
+	  </tr> 
+	</table>
+</td></tr> <!-- конец первой строки таблицы-сайта -->
+<tr><td class = "catalog"> <!-- во второй строке в первой ¤чейке расположен каталог, тоже вложенной таблицей -->
+	<table class="catalog"> <!-- таблица каталог -->
+	  <tr><th>Каталог</th></tr> <!-- заголовок -->
+	  <tr><td><a href="catalog/popular.html">Популярные</a></td></tr>
+	  <tr><td><a href="catalog/windows.html"><div>Окна, стеклопакеты</div></a></td></tr> <!-- ссылки: -->
+	  <tr><td><a href="catalog/buildingmaterials.html">Стройматериалы</a></td></tr>
+	  <tr><td><a href="catalog/decorationmaterials.html">Отделочные материалы</a></td></tr>
+	  <tr><td><a href="catalog/doors.html">Двери, ворота, ограждени¤</a></td></tr>
+	  <tr><td><a href="catalog/appliances.html">Бытовая техника</a></td></tr>
+	  <tr><td><a href="catalog/instruments.html">Инструменты</a></td></tr>
+	  <tr><td><a href="catalog/clothes.html">Спецодежда и защита</a></td></tr>
+	  <tr><td><a href="catalog/sealants.html">Герметики, пены, пластики</a></td></tr>
+	</table>
+	<a  href="catalog/local.html" class="btn btn-default"><h2>Обратная связь</h2></a>
+</td> <!-- конец первой ¤чейки второй строки таблицы сайта (каталога) -->
+<td style="width: 80%">
+      <div style="text-align: center;">
+          <h1>Отправьте нам письмо</h1>
+          <form id="form1" action="request.php" method="post">
+              <p>
+                  <label>Ваше имя:</label>
+                  <input type="text" name="name">
+              </p>
+              <p>
+                  <label>Ваше сообщение:</label>
+                  <br />
+                  <textarea name="message" rows="10" cols="40"></textarea>
+              </p>
+              <p>
+                  <input type="submit" value="Отправить">
+              </p>
+          </form>
+      </div>
+
+</td> <!-- во второй ¤чейке второй таблицы будет список товаров -->
+</tr>
+</table>
+</body>
+</html>
